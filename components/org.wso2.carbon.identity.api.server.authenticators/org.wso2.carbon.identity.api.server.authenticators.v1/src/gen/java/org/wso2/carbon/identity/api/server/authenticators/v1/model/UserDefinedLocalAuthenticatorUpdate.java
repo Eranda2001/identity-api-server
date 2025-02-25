@@ -120,6 +120,25 @@ public class UserDefinedLocalAuthenticatorUpdate  {
     }
 
     /**
+     **/
+    public UserDefinedLocalAuthenticatorUpdate amrValue(String amrValue) {
+
+        this.amrValue = amrValue;
+        return this;
+    }
+
+    @ApiModelProperty(example = "User Defined AMR value for the authenticator", value = "")
+    @JsonProperty("amrValue")
+    @Valid
+    public String getAmrValue() {
+        return amrValue;
+    }
+
+    public void setAmrValue(String amrValue) {
+        this.amrValue = amrValue;
+    }
+
+    /**
     **/
     public UserDefinedLocalAuthenticatorUpdate endpoint(Endpoint endpoint) {
 
@@ -168,6 +187,7 @@ public class UserDefinedLocalAuthenticatorUpdate  {
         UserDefinedLocalAuthenticatorUpdate userDefinedLocalAuthenticatorUpdate = (UserDefinedLocalAuthenticatorUpdate) o;
         return Objects.equals(this.displayName, userDefinedLocalAuthenticatorUpdate.displayName) &&
             Objects.equals(this.isEnabled, userDefinedLocalAuthenticatorUpdate.isEnabled) &&
+                Objects.equals(this.amrValue, userDefinedLocalAuthenticatorUpdate.amrValue) &&
             Objects.equals(this.image, userDefinedLocalAuthenticatorUpdate.image) &&
             Objects.equals(this.description, userDefinedLocalAuthenticatorUpdate.description) &&
             Objects.equals(this.endpoint, userDefinedLocalAuthenticatorUpdate.endpoint);
@@ -175,7 +195,7 @@ public class UserDefinedLocalAuthenticatorUpdate  {
 
     @Override
     public int hashCode() {
-        return Objects.hash(displayName, isEnabled, image, description, endpoint);
+        return Objects.hash(displayName, isEnabled, amrValue, image, description, endpoint);
     }
 
     @Override
@@ -188,6 +208,7 @@ public class UserDefinedLocalAuthenticatorUpdate  {
         sb.append("    isEnabled: ").append(toIndentedString(isEnabled)).append("\n");
         sb.append("    image: ").append(toIndentedString(image)).append("\n");
         sb.append("    description: ").append(toIndentedString(description)).append("\n");
+        sb.append("    amrValue: ").append(toIndentedString(amrValue)).append("\n");
         sb.append("    endpoint: ").append(toIndentedString(endpoint)).append("\n");
         sb.append("}");
         return sb.toString();
