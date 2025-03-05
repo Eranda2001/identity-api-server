@@ -245,7 +245,7 @@ public enum DefinedByEnum {
             Objects.equals(this.isEnabled, federatedAuthenticatorPUTRequest.isEnabled) &&
             Objects.equals(this.isDefault, federatedAuthenticatorPUTRequest.isDefault) &&
             Objects.equals(this.definedBy, federatedAuthenticatorPUTRequest.definedBy) &&
-                Objects.equals(this.amrValue, federatedAuthenticatorPUTRequest.amrValue) &&
+            Objects.equals(this.amrValue, federatedAuthenticatorPUTRequest.amrValue) &&
             Objects.equals(this.properties, federatedAuthenticatorPUTRequest.properties) &&
             Objects.equals(this.endpoint, federatedAuthenticatorPUTRequest.endpoint);
     }

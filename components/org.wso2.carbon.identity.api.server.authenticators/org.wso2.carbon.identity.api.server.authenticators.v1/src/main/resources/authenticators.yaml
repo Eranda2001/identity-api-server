@@ -514,7 +514,6 @@ components:
         - displayName
         - isEnabled
         - endpoint
-        - amrValue
     UserDefinedLocalAuthenticatorUpdate:
       description: TThis represents the configuration for updating user defined local authenticator.
       type: object

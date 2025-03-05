@@ -37,7 +37,7 @@ public class FederatedAuthenticator  {
     private String authenticatorId;
     private String name;
     private Boolean isEnabled = false;
-   private String amrValue;
+    private String amrValue;
 
 @XmlType(name="DefinedByEnum")
 @XmlEnum(String.class)
@@ -271,7 +271,7 @@ public enum DefinedByEnum {
             Objects.equals(this.name, federatedAuthenticator.name) &&
             Objects.equals(this.isEnabled, federatedAuthenticator.isEnabled) &&
             Objects.equals(this.definedBy, federatedAuthenticator.definedBy) &&
-                Objects.equals(this.amrValue, federatedAuthenticator.amrValue) &&
+            Objects.equals(this.amrValue, federatedAuthenticator.amrValue) &&
             Objects.equals(this.isDefault, federatedAuthenticator.isDefault) &&
             Objects.equals(this.tags, federatedAuthenticator.tags) &&
             Objects.equals(this.properties, federatedAuthenticator.properties) &&

@@ -150,7 +150,6 @@ public class UserDefinedLocalAuthenticatorUpdate  {
     @ApiModelProperty(example = "basic", required = true, value = "")
     @JsonProperty("amrValue")
     @Valid
-    @NotNull(message = "Property amrValue cannot be null.")
 
     public String getAmrValue() {
         return amrValue;

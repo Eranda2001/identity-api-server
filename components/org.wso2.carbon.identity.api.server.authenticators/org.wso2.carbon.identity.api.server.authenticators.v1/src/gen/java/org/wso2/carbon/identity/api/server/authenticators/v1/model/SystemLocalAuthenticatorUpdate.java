@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024, WSO2 LLC. (http://www.wso2.com).
+ * Copyright (c) 2025, WSO2 LLC. (http://www.wso2.com).
  *
  * WSO2 LLC. licenses this file to you under the Apache License,
  * Version 2.0 (the "License"); you may not use this file except
@@ -19,7 +19,6 @@
 package org.wso2.carbon.identity.api.server.authenticators.v1.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import javax.validation.constraints.*;
@@ -28,13 +27,12 @@ import javax.validation.constraints.*;
  * Update the system authenticator AMR Value
  **/
 
-import io.swagger.annotations.*;
 import java.util.Objects;
 import javax.validation.Valid;
-import javax.xml.bind.annotation.*;
-@ApiModel(description = "Update the system authenticator AMR Value")
+
+@ApiModel(description = "Update the system authenticator AMR Value.")
 public class SystemLocalAuthenticatorUpdate  {
-  
+
     private String amrValue;
 
     /**

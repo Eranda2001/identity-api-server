@@ -178,7 +178,7 @@ public enum DefinedByEnum {
         return this;
     }
 
-    @ApiModelProperty(example = "Custom AMR values for user defined Federated Authenticators", value = "")
+    @ApiModelProperty(example = "totp", value = "")
     @JsonProperty("amrValue")
     @Valid
     public String getAmrValue() {
@@ -249,7 +249,7 @@ public enum DefinedByEnum {
             Objects.equals(this.isEnabled, federatedUserDefinedAuthenticator.isEnabled) &&
             Objects.equals(this.definedBy, federatedUserDefinedAuthenticator.definedBy) &&
             Objects.equals(this.isDefault, federatedUserDefinedAuthenticator.isDefault) &&
-                Objects.equals(this.amrValue, federatedUserDefinedAuthenticator.amrValue) &&
+            Objects.equals(this.amrValue, federatedUserDefinedAuthenticator.amrValue) &&
             Objects.equals(this.tags, federatedUserDefinedAuthenticator.tags) &&
             Objects.equals(this.endpoint, federatedUserDefinedAuthenticator.endpoint);
     }

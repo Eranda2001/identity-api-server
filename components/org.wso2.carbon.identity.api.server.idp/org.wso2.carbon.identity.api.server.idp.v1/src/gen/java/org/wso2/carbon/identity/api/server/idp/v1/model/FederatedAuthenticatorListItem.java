@@ -117,7 +117,6 @@ public enum DefinedByEnum {
         this.isEnabled = isEnabled;
         return this;
     }
-
     
     @ApiModelProperty(example = "true", value = "")
     @JsonProperty("isEnabled")
